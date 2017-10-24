@@ -1,0 +1,25 @@
+{
+  "name": "image-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dingchaolin/image-demo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dingchaolin/image-demo/issues"
+  },
+  "homepage": "https://github.com/dingchaolin/image-demo#readme",
+  "dependencies": {
+    "@types/images": "^2.2.1",
+    "@types/node": "^8.0.46",
+    "canvas": "^1.6.7",
+    "images": "^3.0.1"
+  }
+}
