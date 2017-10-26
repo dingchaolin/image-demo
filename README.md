@@ -33,7 +33,7 @@
 - GraphicsMagick和ImageMagick在windows10 64位下的安装都比较傻瓜式，直接下载对应的exe文件，不分32位和64位，setup 一路next就行。
 - 总结，gm的速度仅仅比sharp慢，比其他的几个图片库都要快的多，并且提供的api很丰富，链式调用写法很爽，安装配置也相对简单的多，支持在图片上直接添加中文文字。其他的几个图片库，对于&rdquo;在图片上添加文字&ldquo;这个功能，有些不提供，有些提供了但很难用。
 
-#### 提供一段gm的示例代码 demo文件夹中
+#### 提供一段gm的示例代码（demo文件夹中）
 ```
 var gm = require('gm');
 var fs = require('fs');
