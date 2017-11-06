@@ -4,7 +4,7 @@
 var gm = require("gm");
 var imageMagick = gm.subClass({ imageMagick : true });
 var fs = require('fs');
-imageMagick(30, 30, "pink").toBuffer("jpg", (err, buffer)=>{
+imageMagick(300, 300, "pink").toBuffer("jpg", (err, buffer)=>{
     fs.writeFileSync("./fill.jpg", buffer);
     console.log("done")
 })
