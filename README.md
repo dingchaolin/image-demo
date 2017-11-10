@@ -57,3 +57,25 @@ gm('./0.jpg')
         }
     });
 ```
+
+
+# red-hat 安装gm
+
+## ImageMagick 安装 
+- 安装    yum install ImageMagick
+- 查看是否安装成功   rpm -qa | grep ImageMagick
+
+## gm 安装
+- npm install gm --save
+
+## 测试代码
+```
+var gm = require("gm");
+var imageMagick = gm.subClass({ imageMagick : true });
+var fs = require('fs');
+imageMagick(300, 300, "pink").toBuffer("jpg", (err, buffer)=>{
+    fs.writeFileSync("./fill.jpg", buffer);
+    console.log("image create success!")
+})
+```
+- 会生成一个300*300，背景色为粉色的图片
