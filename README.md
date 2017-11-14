@@ -79,3 +79,42 @@ imageMagick(300, 300, "pink").toBuffer("jpg", (err, buffer)=>{
 })
 ```
 - 会生成一个300*300，背景色为粉色的图片
+
+#环境配置
+- # 代码运行环境
+  
+  ### 1.node
+  - 开发时用的 8.9.0, node直接更新到最新的版本即可，没有太多限制
+  
+  ### 2.gm的依赖环境
+  
+  #### mac下环境配置
+  - 1. 安装Xcode软件 **很重要** 在mac的应用中心就可以安装
+  - 2. 安装imagemagick        brew install imagemagick
+  - 3. 安装graphicsmagick     brew install graphicsmagick
+  - 4. 以上3步之后 npm install gm 基本就没什么问题了
+  
+  #### centos下环境配置
+  - 1. 安装 imagemagick graphicsmagick的依赖
+  - yum install -y gcc libpng libjpeg libpng-devel libjpeg-devel ghostscript libtiff libtiff-devel freetype freetype-devel
+  - 2. 安装imagemagick
+  - yum install ImageMagick
+  - 3. 安装graphicsmagick
+  - wget ftp://ftp.graphicsmagick.org/pub/GraphicsMagick/1.3/GraphicsMagick-1.3.25.tar.gz
+  - tar -zxvf GraphicsMagick-1.3.25.tar.gz
+  - cd GraphicsMagick-1.3.25
+  - ./configure
+  - make
+  - make install
+  - 4.以上步骤之后 gm基本就能使用
+     
+  ### 数据库： redis
+  - wget http://download.redis.io/releases/redis-3.2.1.tar.gz
+  - tar xzf redis-3.2.1.tar.gz
+  - cd redis-3.2.1
+  - make
+  - make install
+ 
+  
+  
+  
